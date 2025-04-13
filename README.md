@@ -1,53 +1,70 @@
-![Build Status](https://github.com/kong/docker-kong/actions/workflows/test.yml/badge.svg)
+# 🚀 SmartAPI – Serverless API Management System
 
-# About this Repo
+> A modern, cloud-native API management solution inspired by [Kong](https://github.com/Kong/kong-manager), tailored for learning and scalability.
 
-This is the Git repo of the Docker
-[official image](https://docs.docker.com/docker-hub/official_repos/) for
-[kong](https://registry.hub.docker.com/_/kong/).
-See [the Docker Hub page](https://registry.hub.docker.com/_/kong/)
-for the full readme on how to use this Docker image and for information
-regarding contributing and issues.
+---
 
-The full readme is generated over in [docker-library/docs](https://github.com/docker-library/docs),
-specifically in [docker-library/docs/kong](https://github.com/docker-library/docs/tree/master/kong).
+## 🧠 About the Project
 
-See a change merged here that doesn't show up on the Docker Hub yet?
-Check [the "library/kong" manifest file in the docker-library/official-images
-repo](https://github.com/docker-library/official-images/blob/master/library/kong),
-especially [PRs with the "library/kong" label on that
-repo](https://github.com/docker-library/official-images/labels/library%2Fkong). For more information about the official images process, see the [docker-library/official-images readme](https://github.com/docker-library/official-images/blob/master/README.md).
+**SmartAPI** is a fork of [Kong Manager](https://github.com/Kong/kong-manager), reimagined as a serverless API management system. This project demonstrates how **serverless architecture** can simplify backend development and offer seamless scalability for modern web services.
 
-# For Kong developers
+With SmartAPI, developers can create, deploy, and manage APIs effortlessly using cloud-based functions—eliminating the need for server provisioning or infrastructure maintenance.
 
-## Pushing a Kong patch release (x.y.Z) update
+---
 
-If the update does not require changes to the Dockerfiles other than
-pointing to the latest Kong code, the process can be semi-automated as follows:
+## ☁️ Technologies & Tools
 
-1. Check out this repository.
+SmartAPI utilizes:
 
-2. Run `./update.sh x.y.z`
+- **AWS Lambda** or **Azure Functions** – for serverless API logic
+- **API Gateway / Azure API Management** – for routing, security, and analytics
+- **Kong API Gateway** – as the foundational layer for plugin-driven management
 
-   This will create a release branch, modify the relevant files automatically,
-   give you a chance to review the changes and press "y", then
-   it will push the branch and open a browser with the PR
-   to this repository.
+---
 
-3. Peer review, run CI and merge the submitted PR.
+## ✨ Key Features
 
-4. Run `./submit.sh -p x.y.z`
+- ✅ **Function-based Endpoint Deployment**  
+  Deploy APIs as individual functions that scale automatically with demand.
 
-   Once the internal PR is merged, this script will do the same
-   for the [official-images](https://github.com/docker-library/official-images)
-   repository. It will clone [Kong's fork](https://github.com/kong/official-images),
-   create a branch, modify the relevant files automatically,
-   give you a chance to review the changes and press "y", then
-   it will push the branch and open a browser with the PR
-   to the docker-library repository.
+- 📊 **Usage Monitoring & Logging**  
+  Track API calls, performance, and system logs in real time.
 
-## Pushing a Kong minor release (x.Y.0) update
+- 🔒 **Rate Limiting & API Key Management**  
+  Control access and protect your APIs with built-in security policies.
 
-Not semi-automated yet. Note that minor releases are more likely to require more
-extensive changes to the Dockerfiles.
+- 📈 **Effortless Scalability**  
+  Automatically handle increasing traffic without manual intervention.
 
+- 💸 **Cost-Effective**  
+  Pay only for what you use – no cost during idle time.
+
+---
+
+## 🎓 Educational Purpose
+
+This project is built to help students:
+
+- Understand **cloud-native application design**
+- Learn **microservices architecture** using APIs
+- Gain hands-on experience with **serverless computing**
+- Explore modern tools in **API security, scaling, and observability**
+
+---
+
+## 📁 Getting Started
+
+> _Coming soon: Setup instructions, environment configs, and deployment guides._
+
+---
+
+## 🙌 Credits
+
+- Based on [Kong Manager](https://github.com/Kong/kong-manager)
+- Inspired by modern cloud platforms like AWS and Azure
+
+---
+
+## 📜 License
+
+MIT License – feel free to use, learn, and build on top of this project!
